@@ -1,36 +1,53 @@
 pragma solidity >=0.4.22 <0.8.0;
 
 contract SmartContracts {
-    struct product { // Struct
+    //test
+    bool column;
+    bool doors;
+    bool brakes;
+    bool cable;
+
+    struct product {
+
+        string client;
         string name;
         string component;
-        bool verified;
-        uint64 quantity;
-        uint64 price
+        uint doorsNumber;
+        uint columnNumber;
         
-    }
-
-
-    struct CertificatesAndPermits{
-        string certificates;
-        string permits;
-    }
-
-
-
-    struct authentificate { // Struct
-        string name;
         bool verified;
-        uint64 quantity;
+        uint quantity;
+        uint64 price;
         
+        uint certificate_of_conformity_unit;
+        uint [] certificate_of_conformity_list;
+        string battery_operating_permit;
+
+
+    }
+    
+        
+    //function that will return true if the test passes
+    function columnStatus(bool status) public {
+        column = status;
+    }
+    function doorsStatus(bool status) public {
+        doors = status;
+    }
+    function brakeStatus(bool status) public {
+        brakes = status;
+    }
+    function cableStatus(bool status) public {
+        cable = status;
     }
 
 
-     struct test { // Struct
-        string name;
-        bool verified;
-        uint64 quantity;
-        
-    }
+
+    
+
+//https://medium.com/@yangnana11/solidity-function-types-4ad4e5de6d56
+ 
+
+    
 }
 
