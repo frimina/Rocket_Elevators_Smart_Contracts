@@ -12,15 +12,19 @@ contract SmartContracts {
         string client;
         string name;
         string component;
+        uint doorsNumber;
+        uint columnNumber;
+        
         bool verified;
         uint quantity;
         uint64 price;
-        uint columnNumber;
+        
         uint certificate_of_conformity_unit;
         uint [] certificate_of_conformity_list;
         string battery_operating_permit;
+
+
     }
-    
     
         
     //function that will return true if the test passes
@@ -36,6 +40,7 @@ contract SmartContracts {
     function cableStatus(bool status) public {
         cable = status;
     }
+
 
 
     
