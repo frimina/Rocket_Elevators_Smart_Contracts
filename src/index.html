@@ -1,37 +1,25 @@
 <h2 class="text-center" style="margin-top: 80px; margin-bottom: 50px; margin-left: 500px;">INPUT YOUR PROJECT </h2>
 <!-- INSERTING THE FORM IN THE INTERVENTIONS TABLE -->
 <h3>
-    <div class="row" style="background-color:rgb(243, 221, 231); margin-left: 10px; margin-right: 10px">
+    <div class="row" style="background-color:rgb(243, 221, 231); margin-left: 50px; margin-right: 50px; margin-top: 50px">
         <div id="cnbattery" class="col-md-12 text-center selbatt selform d-none"
             style="font-size: 20px; margin-top: 10px">
-            <label for="sbattery">Battery</label>
-            <select id="sbattery" class="form-control pointer" name="sbattery" style="font-size: 18px; margin-top: 20px"
-                required>
-            </select>
+            <label for="sbattery" style="margin-left: 100px">Battery</label>
+            <input type="number" class="form-control" style="height: 22px" id="sbattery" placeholder="0">
         </div>
-        <div id="cncolumn" class="col-md-12 text-center selcol selform d-none" style="font-size: 20px; margin-top: 10px">
-            <label for="scolumn">Column</label>
-            <select id="scolumn" class="form-control pointer" name="scolumn" style="font-size: 18px; margin-top: 20px">
-                <option value="">None</option>
-            </select>
+        <div id="cncolumn" class="col-md-12 text-center selcol selform d-none" style="font-size: 20px; margin-top: 20px">
+            <label for="scolumn" style="margin-left: 100px">Column</label>
+            <input type="number" class="form-control" style="height: 22px" id="scolumn" placeholder="0">
         </div>
-        <div id="cnelevator" class="col-md-12 text-center selelev selform d-none" style="font-size: 20px; margin-top: 10px">
-            <label for="selevator">Elevator</label>
-            <select id="selevator" class="form-control pointer" name="selevator"
-                style="font-size: 18px; margin-top: 20px">
-                <option value="">None</option>
-            </select>
+        <div id="cnelevator" class="col-md-12 text-center selelev selform d-none" style="font-size: 20px; margin-top: 20px">
+            <label for="selevator" style="margin-left: 100px">Elevator</label>
+            <input type="number" class="form-control" style="height: 22px" id="selevator" placeholder="0">
         </div>
-        <div class="col-md-12 text-center selemp" style="font-size: 20px; margin-top: 10px">
-            <label for="semployee">Floors</label>
-            <select id="semployee" class="form-control pointer" name="semployee"
-                style="font-size: 18px; margin-top: 20px">
-                <option value="">None</option>
-            </select>
+        <div class="col-md-12 text-center selemp" style="font-size: 20px; margin-top: 20px">
+            <label for="sfloor" style="margin-left: 100px">Floor</label>
+            <input type="number" class="form-control" style="height: 22px" id="floor" placeholder="0">
         </div>
 </h3>
 <div class="row">
-    <div class="col-md-12 text-center" style="margin-top: 20px">
-        <button id="btnsubmit" type="button" class="btn btn-red">SUBMIT</button>
-    </div>
+  <button type="button" class="btn btn-danger" style="margin-top: 25px; margin-left: 570px; font-size: 18px" onclick="getQuote()">SUBMIT</button>
 </div>
