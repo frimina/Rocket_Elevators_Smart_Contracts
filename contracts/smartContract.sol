@@ -6,16 +6,14 @@ contract SmartContract {
     bool doorsStatus;
     bool brakeStatus;  
     bool cableStatus; 
-    bool batteryStatus;
-    //bool result;   
+    bool batteryStatus;    
 
     struct Column {
         bool isDoorsTestPass;   
         bool isBrakesTestPass;
         bool isCableTestPass;
         bool hasBatteryOperatingPermit;
-        bool hasColumnCertificateOfConformity;
-        uint columnNumber;         
+        bool hasColumnCertificateOfConformity;                
     } 
 
     Column[] public columnList;
@@ -46,14 +44,12 @@ contract SmartContract {
     function getBatteryStatus(bool _batteryStatus) public pure returns(bool){
         return _batteryStatus; 
     }
-
     function generateCertificate(uint i, bool _isDoorsTestPass, bool _isBrakesTestPass, bool _isCableTestPass, bool _hasBatteryOperatingPermit) public {
         if (_isDoorsTestPass == true && _isBrakesTestPass == true && _isCableTestPass == true && _hasBatteryOperatingPermit == true)
         {
              columnList[i].hasColumnCertificateOfConformity = true;
         }
     } 
-
     function verifyColumn() public
     {
         for (uint i = 0; i < numberOfColumns; i++)   {
@@ -64,7 +60,6 @@ contract SmartContract {
             generateCertificate(i, columnList[i].isDoorsTestPass, columnList[i].isBrakesTestPass, columnList[i].isCableTestPass, columnList[i].hasBatteryOperatingPermit);
         }
     }
-
     function isProductAproved(uint _numberOfColumns) public returns(bool)
     {   
         for (uint i = 0; i < _numberOfColumns; i++)   {
@@ -72,12 +67,10 @@ contract SmartContract {
             if (columnList[i].hasColumnCertificateOfConformity != true)
             {
                 p.isAproved = false;
-            }
-            return p.isAproved;
+            }            
         }
-    }  
-
-    bool result = isProductAproved(numberOfColumns);   
+        return p.isAproved;
+    }      
    
     // //function to get the value of certificte list
     // function getCertificate(uint initial) public view returns(uint) {
