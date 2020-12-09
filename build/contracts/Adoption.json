@@ -298,10 +298,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        341,
-                        342
+                        189,
+                        190
                       ],
-                      "referencedDeclaration": 341,
+                      "referencedDeclaration": 189,
                       "src": "169:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -384,7 +384,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 338,
+                        "referencedDeclaration": 186,
                         "src": "228:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -861,10 +861,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        341,
-                        342
+                        189,
+                        190
                       ],
-                      "referencedDeclaration": 341,
+                      "referencedDeclaration": 189,
                       "src": "169:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -947,7 +947,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 338,
+                        "referencedDeclaration": 186,
                         "src": "228:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1200,12 +1200,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xd11e8A2adb02d0a4d0163FFD302608dEbE2F5114",
-      "transactionHash": "0x53838b17dbca8614d4b797c914818b62227aa1192a4684feb5ddc928743401b1"
+      "address": "0x8994F1deb8dd14c6C95AF538c2cF22832dfA88Ed",
+      "transactionHash": "0x32b53cb12aa56a6615c8385be975f0892a1c866ac00fc1f6a0939d4fec30b92a"
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-09T14:29:00.133Z",
+  "updatedAt": "2020-12-09T02:38:28.503Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

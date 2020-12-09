@@ -27,6 +27,7 @@ contract SmartContract {
         uint64 price;
         uint columnNumber;            
     }
+    
     Product p;
 
     function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
@@ -50,8 +51,9 @@ contract SmartContract {
              columnList[i].hasColumnCertificateOfConformity = true;
         }
     } 
+
     function verifyColumn() public
-    {
+    {   
         for (uint i = 0; i < numberOfColumns; i++)   {
             columnList[i].isDoorsTestPass = getDoorsStatus(doorsStatus);
             columnList[i].isBrakesTestPass = getBrakeStatus(brakeStatus);
@@ -72,17 +74,10 @@ contract SmartContract {
         return p.isAproved;
     }      
    
-    // //function to get the value of certificte list
-    // function getCertificate(uint initial) public view returns(uint) {
-    //     return certificate_of_conformity_list[initial];
-    // }    
-
-    // //function to get the number of certificates
-    // function getNumberOfCertificate() public view returns(uint) {
-    //     return certificate_of_conformity_list.length;
-    // }
-
+   
 //https://medium.com/better-programming/how-to-test-ethereum-smart-contracts-35abc8fa199d
 //https://medium.com/@yangnana11/solidity-function-types-4ad4e5de6d56
     
 }
+
+
