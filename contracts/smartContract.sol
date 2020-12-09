@@ -2,7 +2,12 @@ pragma solidity >=0.4.22 <0.8.0;
 
 contract SmartContract {
 
-    uint numberOfColumns;    
+    uint numberOfColumns;
+    bool doorsStatus;
+    bool brakeStatus;  
+    bool cableStatus; 
+    bool batteryStatus;
+    //bool result;   
 
     struct Column {
         bool isDoorsTestPass;   
@@ -26,19 +31,19 @@ contract SmartContract {
     }
     Product p;
 
-    function getNumberOfColumns(uint _numberOfColumns) public returns(uint numberOfColumns){
+    function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
         return _numberOfColumns;
     }
-    function getDoorsStatus(bool _doorsStatus) public returns(bool doorsStatus){
+    function getDoorsStatus(bool _doorsStatus) public pure returns(bool){
         return _doorsStatus;
     }
-    function getBrakeStatus(bool _brakeStatus) public returns(bool brakeStatus){
+    function getBrakeStatus(bool _brakeStatus) public pure returns(bool){
         return _brakeStatus;
     }
-    function getCableStatus(bool _cableStatus) public returns(bool cableStatus){
+    function getCableStatus(bool _cableStatus) public pure returns(bool){
         return _cableStatus;
     }
-    function getBatteryStatus(bool _batteryStatus) public returns(bool batteryStatus){
+    function getBatteryStatus(bool _batteryStatus) public pure returns(bool){
         return _batteryStatus; 
     }
 
@@ -52,17 +57,17 @@ contract SmartContract {
     function verifyColumn() public
     {
         for (uint i = 0; i < numberOfColumns; i++)   {
-            columnList[i].isDoorsTestPass = getDoorsStatus();
-            columnList[i].isBrakesTestPass = getBrakeStatus();
-            columnList[i].isCableTestPass = getCableStatus();
-            columnList[i].hasBatteryOperatingPermit = getBatteryStatus();
+            columnList[i].isDoorsTestPass = getDoorsStatus(doorsStatus);
+            columnList[i].isBrakesTestPass = getBrakeStatus(brakeStatus);
+            columnList[i].isCableTestPass = getCableStatus(cableStatus);
+            columnList[i].hasBatteryOperatingPermit = getBatteryStatus(batteryStatus);
             generateCertificate(i, columnList[i].isDoorsTestPass, columnList[i].isBrakesTestPass, columnList[i].isCableTestPass, columnList[i].hasBatteryOperatingPermit);
         }
     }
 
-    function isProductAproved() external returns(bool isAproved)
+    function isProductAproved(uint _numberOfColumns) public returns(bool)
     {   
-        for (uint i = 0; i < numberOfColumns; i++)   {
+        for (uint i = 0; i < _numberOfColumns; i++)   {
             p.isAproved = true;
             if (columnList[i].hasColumnCertificateOfConformity != true)
             {
@@ -70,7 +75,9 @@ contract SmartContract {
             }
             return p.isAproved;
         }
-    }       
+    }  
+
+    bool result = isProductAproved(numberOfColumns);   
    
     // //function to get the value of certificte list
     // function getCertificate(uint initial) public view returns(uint) {
