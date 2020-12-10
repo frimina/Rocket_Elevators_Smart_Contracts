@@ -25,6 +25,35 @@
 </div>
 </template>
 
+
+<script>
+// import { mapGetters} from "vuex" 
+
+
+// // export default {
+// //   computed:{
+// //    ...mapGetters("drizzle", ["isDrizzleInitialized", "drizzleInstance"]),
+// //    ...mapGetters("contracts", ["getContractData", "contractInstances"]),
+// //    getDoorsStatus(){
+// //      !this.contractInstances ["smartContract"].synced;
+// //      let doors = [];
+// //      doors = this.getContractData({
+// //         contract: "smartContract", 
+// //         methode: "getDoorsStatus", 
+// //         toUtf8: false,
+// //         toAscii: false,
+// //      })
+// //    }
+// //   },
+// //   name: 'HelloWorld',
+// //   props: {
+// //     msg: String
+// //   }
+// // }
+</script>
+
+
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #visa {
