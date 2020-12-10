@@ -2,22 +2,49 @@ pragma solidity >=0.4.22 <0.8.0;
 
 contract SmartContract {
 
+    address[16] public clients;
+     // define needs
+    uint256 public nbElevators;
+    uint256 public nbControllers;
+    uint256 public nbDoors;
+    uint256 public nbButtons;
+    uint256 public nbDisplays;
+    function setOrder(
+        uint256 _nbElevators,
+        uint256 _nbControllers,
+        uint256 _nbDoors,
+        uint256 _nbButtons,
+        uint256 _nbDisplays
+    ) public {
+        nbElevators = _nbElevators;
+        nbControllers = _nbControllers;
+        nbDoors = _nbDoors;
+        nbButtons = _nbButtons;
+        nbDisplays = _nbDisplays;
+    }
+    function getOrder() public view returns (uint256[5] memory) {
+        uint256[5] memory myOrder = [
+            nbElevators,
+            nbControllers,
+            nbDoors,
+            nbButtons,
+            nbDisplays
+        ];
+        return myOrder;
+    }
     uint numberOfColumns;
     bool doorsStatus;
     bool brakeStatus;  
     bool cableStatus; 
-    bool batteryStatus;    
-
+    bool batteryStatus; 
     struct Column {
         bool isDoorsTestPass;   
         bool isBrakesTestPass;
         bool isCableTestPass;
         bool hasBatteryOperatingPermit;
         bool hasColumnCertificateOfConformity;                
-    } 
-
-    Column[] public columnList;
-    
+    }
+    Column[] public columnList;    
     struct Product {
         string client;
         string name;
@@ -26,11 +53,9 @@ contract SmartContract {
         uint quantity;
         uint64 price;
         uint columnNumber;            
-    }
-    
+    }    
     Product p;
-
-    function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
+        function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
         return _numberOfColumns;
     }
     function getDoorsStatus(bool _doorsStatus) public pure returns(bool){
@@ -72,12 +97,8 @@ contract SmartContract {
             }            
         }
         return p.isAproved;
-    }      
-   
-   
-//https://medium.com/better-programming/how-to-test-ethereum-smart-contracts-35abc8fa199d
-//https://medium.com/@yangnana11/solidity-function-types-4ad4e5de6d56
-    
+    }  
+    function getClients() public view returns (address[16] memory) {
+        return clients; 
+    }
 }
-
-
