@@ -4,7 +4,7 @@
     <div class="row" style="background-color:rgb(243, 221, 231); margin-left: 50px; margin-right: 50px; margin-top: 50px">
         <div id="cnbattery" class="col-md-12 text-center selbatt selform d-none"
             style="font-size: 20px; margin-top: 10px">
-            <label for="sbattery" style="margin-left: 100px">Battery</label>
+            <label for="sbattery" style="margin-left: 100px" onchange="getInfo()"">Battery</label>
             <input type="number" class="form-control" style="height: 22px" id="sbattery" placeholder="0">
         </div>
         <div id="cncolumn" class="col-md-12 text-center selcol selform d-none" style="font-size: 20px; margin-top: 20px">
@@ -29,14 +29,39 @@
 </div>
 
 <div class="row">
-  <button type="button" class="sendEthButton btn" style="margin-top: 25px; margin-left: 570px; font-size: 18px">Send Eth</button>
+  <button type="button" class="sendEthButton btn" style="margin-top: 25px; margin-left: 570px; font-size: 18px">Send Ethereum</button>
 </div>
 
-<!-- <button class="btn btn-primary btn-lg btn-block mb-3" id="connectButton" disabled></button> -->
+<hr class="border-hr">
+<div class="row">
+  <div class="col-md-7 col-6" style="font-size: 20px;">Controller:</div>
+  <div class="col-md-5 col-6 text-right" style="font-size: 20px" id="Controller">0</div>
+  <div class="col-md-3 col-6" style="font-size: 20px;">Elevators:</div>
+  <div class="col-md-9 col-6 text-right" style="font-size: 20px;" id="resultAmount">0</div>
+  <div class="col-md-3 col-6" style="font-size: 20px;">Doors:</div>
+  <div class="col-md-9 col-6 text-right" style="font-size: 20px;" id="resultAmount">0</div>
+  <div class="col-md-3 col-6" style="font-size: 20px;">Buttons:</div>
+  <div class="col-md-9 col-6 text-right" style="font-size: 20px;" id="resultAmount">0</div>
+  <div class="col-md-3 col-6" style="font-size: 20px;">Screens:</div>
+  <div class="col-md-9 col-6 text-right" style="font-size: 20px;" id="resultAmount">0</div>
+  <div class="col-md-3 col-6" style="font-size: 20px;">Motors:</div>
+  <div class="col-md-9 col-6 text-right" style="font-size: 20px;" id="resultAmount">0</div>
+</div>
+
+<script>
+  function getInfo() {
+    var Controller = document.getElementById("sbattery");
+    Controller.innerHTML = Controller
+  }
+
+</script>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/contract.js"></script>

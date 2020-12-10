@@ -1,0 +1,2044 @@
+{
+  "contractName": "QualityControl",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getVerification",
+      "outputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "identifier",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "startdate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "enddate",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct QualityControl.Permit",
+              "name": "certificate",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "identifier",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "startdate",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "enddate",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct QualityControl.Permit",
+              "name": "perm",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "quantity",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "verified",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct QualityControl.Product[]",
+              "name": "mList",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct QualityControl.Verification",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getVerification\",\"outputs\":[{\"components\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startdate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"enddate\",\"type\":\"uint256\"}],\"internalType\":\"struct QualityControl.Permit\",\"name\":\"certificate\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startdate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"enddate\",\"type\":\"uint256\"}],\"internalType\":\"struct QualityControl.Permit\",\"name\":\"perm\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint64\",\"name\":\"quantity\",\"type\":\"uint64\"},{\"internalType\":\"bool\",\"name\":\"verified\",\"type\":\"bool\"}],\"internalType\":\"struct QualityControl.Product[]\",\"name\":\"mList\",\"type\":\"tuple[]\"}],\"internalType\":\"struct QualityControl.Verification\",\"name\":\"\",\"type\":\"tuple\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/QualityControl.sol\":\"QualityControl\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/Manufacturing.sol\":{\"keccak256\":\"0xb5b1280102d0fe93901e6989cc288af6a597cf77ee46030533eae53a17330fa3\",\"urls\":[\"bzz-raw://e1a6a2e14c72b7747e2fa40e64bfb418b085592b17885939b02e5f58c66d2066\",\"dweb:/ipfs/QmSmpoZwoNBUhZzKBXgKZpLzzFQaCKaK8NuiqFgs2vftMT\"]},\"/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/QualityControl.sol\":{\"keccak256\":\"0xdcf07ccc1118c01fb67ff1f87b98df87d4640343d6444fefc881f0984954df07\",\"urls\":[\"bzz-raw://317d58d980a20bc55c711045289216e1a0f972bc577615a97b51f68899646994\",\"dweb:/ipfs/Qmd8jWaS4emirwNwWAbkygX2HHHv4ruHG32L2rbLNCYixB\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000600760006101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555034801561003a57600080fd5b506105618061004a6000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80631704f09814610030575b600080fd5b61003861004e565b6040516100459190610439565b60405180910390f35b61005661021a565b60006040518060600160405290816000820160405180606001604052908160008201548152602001600182015481526020016002820154815250508152602001600382016040518060600160405290816000820154815260200160018201548152602001600282015481525050815260200160068201805480602002602001604051908101604052809291908181526020016000905b8282101561020d5783829060005260206000209060020201604051806060016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101a85780601f1061017d576101008083540402835291602001916101a8565b820191906000526020600020905b81548152906001019060200180831161018b57829003601f168201915b505050505081526020016001820160009054906101000a900467ffffffffffffffff1667ffffffffffffffff1667ffffffffffffffff1681526020016001820160089054906101000a900460ff161515151581525050815260200190600101906100ec565b5050505081525050905090565b604051806060016040528061022d610247565b815260200161023a610247565b8152602001606081525090565b60405180606001604052806000815260200160008152602001600081525090565b6000610274838361037b565b905092915050565b60006102878261046b565b610291818561048e565b9350836020820285016102a38561045b565b8060005b858110156102df57848403895281516102c08582610268565b94506102cb83610481565b925060208a019950506001810190506102a7565b50829750879550505050505092915050565b6102fa816104b0565b82525050565b600061030b82610476565b610315818561049f565b93506103258185602086016104da565b61032e8161050d565b840191505092915050565b60608201600082015161034f600085018261041b565b506020820151610362602085018261041b565b506040820151610375604085018261041b565b50505050565b600060608301600083015184820360008601526103988282610300565b91505060208301516103ad602086018261042a565b5060408301516103c060408601826102f1565b508091505092915050565b600060e0830160008301516103e36000860182610339565b5060208301516103f66060860182610339565b50604083015184820360c086015261040e828261027c565b9150508091505092915050565b610424816104bc565b82525050565b610433816104c6565b82525050565b6000602082019050818103600083015261045381846103cb565b905092915050565b6000819050602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b600082825260208201905092915050565b60008115159050919050565b6000819050919050565b600067ffffffffffffffff82169050919050565b60005b838110156104f85780820151818401526020810190506104dd565b83811115610507576000848401525b50505050565b6000601f19601f830116905091905056fea365627a7a7231582081a56fcb2d77e3e21295ea313e6e601f89a5bf38f4ed8927095d5747f27697ba6c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80631704f09814610030575b600080fd5b61003861004e565b6040516100459190610439565b60405180910390f35b61005661021a565b60006040518060600160405290816000820160405180606001604052908160008201548152602001600182015481526020016002820154815250508152602001600382016040518060600160405290816000820154815260200160018201548152602001600282015481525050815260200160068201805480602002602001604051908101604052809291908181526020016000905b8282101561020d5783829060005260206000209060020201604051806060016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101a85780601f1061017d576101008083540402835291602001916101a8565b820191906000526020600020905b81548152906001019060200180831161018b57829003601f168201915b505050505081526020016001820160009054906101000a900467ffffffffffffffff1667ffffffffffffffff1667ffffffffffffffff1681526020016001820160089054906101000a900460ff161515151581525050815260200190600101906100ec565b5050505081525050905090565b604051806060016040528061022d610247565b815260200161023a610247565b8152602001606081525090565b60405180606001604052806000815260200160008152602001600081525090565b6000610274838361037b565b905092915050565b60006102878261046b565b610291818561048e565b9350836020820285016102a38561045b565b8060005b858110156102df57848403895281516102c08582610268565b94506102cb83610481565b925060208a019950506001810190506102a7565b50829750879550505050505092915050565b6102fa816104b0565b82525050565b600061030b82610476565b610315818561049f565b93506103258185602086016104da565b61032e8161050d565b840191505092915050565b60608201600082015161034f600085018261041b565b506020820151610362602085018261041b565b506040820151610375604085018261041b565b50505050565b600060608301600083015184820360008601526103988282610300565b91505060208301516103ad602086018261042a565b5060408301516103c060408601826102f1565b508091505092915050565b600060e0830160008301516103e36000860182610339565b5060208301516103f66060860182610339565b50604083015184820360c086015261040e828261027c565b9150508091505092915050565b610424816104bc565b82525050565b610433816104c6565b82525050565b6000602082019050818103600083015261045381846103cb565b905092915050565b6000819050602082019050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b600082825260208201905092915050565b60008115159050919050565b6000819050919050565b600067ffffffffffffffff82169050919050565b60005b838110156104f85780820151818401526020810190506104dd565b83811115610507576000848401525b50505050565b6000601f19601f830116905091905056fea365627a7a7231582081a56fcb2d77e3e21295ea313e6e601f89a5bf38f4ed8927095d5747f27697ba6c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "99:1307:3:-;;;535:1;520:16;;;;;;;;;;;;;;;;;;;;99:1307;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:1307:3;;;;;;;",
+  "deployedSourceMap": "99:1307:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:1307:3;;;;;;;;;;;;;;;;;;;1310:94;;;:::i;:::-;;;;;;;;;;;;;;;;;1358:19;;:::i;:::-;1396:1;1389:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1310:94;:::o;99:1307::-;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;:::o;6:237:-1:-;;147:90;233:3;225:6;147:90;;;133:104;;126:117;;;;;326:972;;497:70;561:5;497:70;;;580:96;669:6;664:3;580:96;;;573:103;;699:3;741:4;733:6;729:17;724:3;720:27;768:72;834:5;768:72;;;860:7;888:1;873:386;898:6;895:1;892:13;873:386;;;960:9;954:4;950:20;945:3;938:33;1005:6;999:13;1027:104;1126:4;1111:13;1027:104;;;1019:112;;1148:76;1217:6;1148:76;;;1138:86;;1247:4;1242:3;1238:14;1231:21;;930:329;920:1;917;913:9;908:14;;873:386;;;877:14;1272:4;1265:11;;1289:3;1282:10;;476:822;;;;;;;;;;1306:94;1373:21;1388:5;1373:21;;;1368:3;1361:34;1355:45;;;1407:319;;1505:35;1534:5;1505:35;;;1552:61;1606:6;1601:3;1552:61;;;1545:68;;1618:52;1663:6;1658:3;1651:4;1644:5;1640:16;1618:52;;;1691:29;1713:6;1691:29;;;1686:3;1682:39;1675:46;;1485:241;;;;;;1800:626;1925:4;1920:3;1916:14;2014:4;2007:5;2003:16;1997:23;2026:63;2083:4;2078:3;2074:14;2060:12;2026:63;;;1945:150;2173:4;2166:5;2162:16;2156:23;2185:63;2242:4;2237:3;2233:14;2219:12;2185:63;;;2105:149;2330:4;2323:5;2319:16;2313:23;2342:63;2399:4;2394:3;2390:14;2376:12;2342:63;;;2264:147;1898:528;;;;2502:705;;2637:4;2632:3;2628:14;2720:4;2713:5;2709:16;2703:23;2772:3;2766:4;2762:14;2755:4;2750:3;2746:14;2739:38;2792:69;2856:4;2842:12;2792:69;;;2784:77;;2657:216;2950:4;2943:5;2939:16;2933:23;2962:61;3017:4;3012:3;3008:14;2994:12;2962:61;;;2883:146;3106:4;3099:5;3095:16;3089:23;3118:57;3169:4;3164:3;3160:14;3146:12;3118:57;;;3039:142;3198:4;3191:11;;2610:597;;;;;;3293:891;;3452:4;3447:3;3443:14;3542:4;3535:5;3531:16;3525:23;3554:105;3653:4;3648:3;3644:14;3630:12;3554:105;;;3472:193;3738:4;3731:5;3727:16;3721:23;3750:105;3849:4;3844:3;3840:14;3826:12;3750:105;;;3675:186;3935:4;3928:5;3924:16;3918:23;3987:3;3981:4;3977:14;3970:4;3965:3;3961:14;3954:38;4007:139;4141:4;4127:12;4007:139;;;3999:147;;3871:287;4175:4;4168:11;;3425:759;;;;;;4191:103;4264:24;4282:5;4264:24;;;4259:3;4252:37;4246:48;;;4301:100;4372:23;4389:5;4372:23;;;4367:3;4360:36;4354:47;;;4408:377;;4584:2;4573:9;4569:18;4561:26;;4634:9;4628:4;4624:20;4620:1;4609:9;4605:17;4598:47;4659:116;4770:4;4761:6;4659:116;;;4651:124;;4555:230;;;;;4792:167;;4894:3;4886:11;;4932:4;4927:3;4923:14;4915:22;;4880:79;;;;4966:153;;5091:5;5085:12;5075:22;;5056:63;;;;5126:118;;5216:5;5210:12;5200:22;;5181:63;;;;5251:124;;5365:4;5360:3;5356:14;5348:22;;5342:33;;;;5383:188;;5523:6;5518:3;5511:19;5560:4;5555:3;5551:14;5536:29;;5504:67;;;;;5580:153;;5685:6;5680:3;5673:19;5722:4;5717:3;5713:14;5698:29;;5666:67;;;;;5741:85;;5814:5;5807:13;5800:21;5789:32;;5783:43;;;;5833:72;;5895:5;5884:16;;5878:27;;;;5912:96;;5984:18;5977:5;5973:30;5962:41;;5956:52;;;;6016:268;6081:1;6088:101;6102:6;6099:1;6096:13;6088:101;;;6178:1;6173:3;6169:11;6163:18;6159:1;6154:3;6150:11;6143:39;6124:2;6121:1;6117:10;6112:15;;6088:101;;;6204:6;6201:1;6198:13;6195:2;;;6269:1;6260:6;6255:3;6251:16;6244:27;6195:2;6065:219;;;;;6292:97;;6380:2;6376:7;6371:2;6364:5;6360:14;6356:28;6346:38;;6340:49;;;",
+  "source": "pragma solidity >=0.4.22 <0.8.0;\npragma experimental ABIEncoderV2;\n\nimport \"./Manufacturing.sol\";\n\ncontract QualityControl {\n    struct Permit {\n        uint256 identifier;\n        uint256 startdate;\n        uint256 enddate;\n        //uint datetime // 1512220800\n    }\n\n    struct Product {\n        string name;\n        uint64 quantity;\n        bool verified;\n    }\n\n    struct Verification {\n        Permit certificate;\n        Permit perm;\n        Product[] mList;\n    }\n    //Product[] mList;\n    Verification v;\n    uint64 index = 0;\n\n    function generatePermit() private view returns (Permit memory certificate) {\n        Permit memory p;\n        p.identifier = block.timestamp / 2;\n        p.startdate = block.timestamp;\n        p.enddate = block.timestamp + 5 * 365 days;\n        return p;\n    }\n\n    // function VerificationStamp(address a) public {\n    //     v.certificate = generatePermit();\n    //     v.perm = generatePermit();\n    //     Manufacturing.Product[] memory products = Manufacturing(a).viewOrder();\n    //     for (index; index < products.length; index++) {\n    //         Product memory p;\n    //         p.verified = true;\n    //         p.name = products[index].Name;\n    //         p.quantity = products[index].Quantity;\n    //         v.mList.push(p);\n    //     }\n    // }\n\n    function getVerification() public view returns (Verification memory) {\n        return v;\n    }\n}\n",
+  "sourcePath": "/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/QualityControl.sol",
+  "ast": {
+    "absolutePath": "/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/QualityControl.sol",
+    "exportedSymbols": {
+      "QualityControl": [
+        530
+      ]
+    },
+    "id": 531,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 454,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "id": 455,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:33:3"
+      },
+      {
+        "absolutePath": "/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/Manufacturing.sol",
+        "file": "./Manufacturing.sol",
+        "id": 456,
+        "nodeType": "ImportDirective",
+        "scope": 531,
+        "sourceUnit": 420,
+        "src": "68:29:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 530,
+        "linearizedBaseContracts": [
+          530
+        ],
+        "name": "QualityControl",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "QualityControl.Permit",
+            "id": 463,
+            "members": [
+              {
+                "constant": false,
+                "id": 458,
+                "name": "identifier",
+                "nodeType": "VariableDeclaration",
+                "scope": 463,
+                "src": "153:18:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 457,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "153:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 460,
+                "name": "startdate",
+                "nodeType": "VariableDeclaration",
+                "scope": 463,
+                "src": "181:17:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 459,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "181:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 462,
+                "name": "enddate",
+                "nodeType": "VariableDeclaration",
+                "scope": 463,
+                "src": "208:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 461,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "208:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Permit",
+            "nodeType": "StructDefinition",
+            "scope": 530,
+            "src": "129:139:3",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "QualityControl.Product",
+            "id": 470,
+            "members": [
+              {
+                "constant": false,
+                "id": 465,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 470,
+                "src": "299:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 464,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "299:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 467,
+                "name": "quantity",
+                "nodeType": "VariableDeclaration",
+                "scope": 470,
+                "src": "320:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 466,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "320:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 469,
+                "name": "verified",
+                "nodeType": "VariableDeclaration",
+                "scope": 470,
+                "src": "345:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 468,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "345:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nodeType": "StructDefinition",
+            "scope": 530,
+            "src": "274:91:3",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "QualityControl.Verification",
+            "id": 478,
+            "members": [
+              {
+                "constant": false,
+                "id": 472,
+                "name": "certificate",
+                "nodeType": "VariableDeclaration",
+                "scope": 478,
+                "src": "401:18:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                  "typeString": "struct QualityControl.Permit"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 471,
+                  "name": "Permit",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 463,
+                  "src": "401:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                    "typeString": "struct QualityControl.Permit"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 474,
+                "name": "perm",
+                "nodeType": "VariableDeclaration",
+                "scope": 478,
+                "src": "429:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                  "typeString": "struct QualityControl.Permit"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 473,
+                  "name": "Permit",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 463,
+                  "src": "429:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                    "typeString": "struct QualityControl.Permit"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 477,
+                "name": "mList",
+                "nodeType": "VariableDeclaration",
+                "scope": 478,
+                "src": "450:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Product_$470_storage_$dyn_storage_ptr",
+                  "typeString": "struct QualityControl.Product[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 475,
+                    "name": "Product",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 470,
+                    "src": "450:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Product_$470_storage_ptr",
+                      "typeString": "struct QualityControl.Product"
+                    }
+                  },
+                  "id": 476,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "450:9:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Product_$470_storage_$dyn_storage_ptr",
+                    "typeString": "struct QualityControl.Product[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Verification",
+            "nodeType": "StructDefinition",
+            "scope": 530,
+            "src": "371:101:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 480,
+            "name": "v",
+            "nodeType": "VariableDeclaration",
+            "scope": 530,
+            "src": "500:14:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Verification_$478_storage",
+              "typeString": "struct QualityControl.Verification"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 479,
+              "name": "Verification",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 478,
+              "src": "500:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Verification_$478_storage_ptr",
+                "typeString": "struct QualityControl.Verification"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 483,
+            "name": "index",
+            "nodeType": "VariableDeclaration",
+            "scope": 530,
+            "src": "520:16:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 481,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "520:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 482,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "535:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 520,
+              "nodeType": "Block",
+              "src": "618:185:3",
+              "statements": [
+                {
+                  "assignments": [
+                    489
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 489,
+                      "name": "p",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 520,
+                      "src": "628:15:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                        "typeString": "struct QualityControl.Permit"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 488,
+                        "name": "Permit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 463,
+                        "src": "628:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                          "typeString": "struct QualityControl.Permit"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 490,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "628:15:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 498,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 491,
+                        "name": "p",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 489,
+                        "src": "653:1:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                          "typeString": "struct QualityControl.Permit memory"
+                        }
+                      },
+                      "id": 493,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "identifier",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 458,
+                      "src": "653:12:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 497,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 494,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 536,
+                          "src": "668:5:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 495,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "timestamp",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "668:15:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "/",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 496,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "686:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      },
+                      "src": "668:19:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "653:34:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 499,
+                  "nodeType": "ExpressionStatement",
+                  "src": "653:34:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 505,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 500,
+                        "name": "p",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 489,
+                        "src": "697:1:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                          "typeString": "struct QualityControl.Permit memory"
+                        }
+                      },
+                      "id": 502,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "startdate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 460,
+                      "src": "697:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 503,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 536,
+                        "src": "711:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 504,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "711:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "697:29:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 506,
+                  "nodeType": "ExpressionStatement",
+                  "src": "697:29:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 516,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 507,
+                        "name": "p",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 489,
+                        "src": "736:1:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                          "typeString": "struct QualityControl.Permit memory"
+                        }
+                      },
+                      "id": 509,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "enddate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 462,
+                      "src": "736:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 515,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 510,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 536,
+                          "src": "748:5:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 511,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "timestamp",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "748:15:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_rational_157680000_by_1",
+                          "typeString": "int_const 157680000"
+                        },
+                        "id": 514,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "35",
+                          "id": 512,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "766:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_5_by_1",
+                            "typeString": "int_const 5"
+                          },
+                          "value": "5"
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "*",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "333635",
+                          "id": 513,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "770:8:3",
+                          "subdenomination": "days",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_31536000_by_1",
+                            "typeString": "int_const 31536000"
+                          },
+                          "value": "365"
+                        },
+                        "src": "766:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_157680000_by_1",
+                          "typeString": "int_const 157680000"
+                        }
+                      },
+                      "src": "748:30:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "736:42:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 517,
+                  "nodeType": "ExpressionStatement",
+                  "src": "736:42:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 518,
+                    "name": "p",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 489,
+                    "src": "795:1:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                      "typeString": "struct QualityControl.Permit memory"
+                    }
+                  },
+                  "functionReturnParameters": 487,
+                  "id": 519,
+                  "nodeType": "Return",
+                  "src": "788:8:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 521,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "generatePermit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 484,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "566:2:3"
+            },
+            "returnParameters": {
+              "id": 487,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 486,
+                  "name": "certificate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 521,
+                  "src": "591:25:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                    "typeString": "struct QualityControl.Permit"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 485,
+                    "name": "Permit",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 463,
+                    "src": "591:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                      "typeString": "struct QualityControl.Permit"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "590:27:3"
+            },
+            "scope": 530,
+            "src": "543:260:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 528,
+              "nodeType": "Block",
+              "src": "1379:25:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 526,
+                    "name": "v",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 480,
+                    "src": "1396:1:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$478_storage",
+                      "typeString": "struct QualityControl.Verification storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 525,
+                  "id": 527,
+                  "nodeType": "Return",
+                  "src": "1389:8:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 529,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVerification",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 522,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1334:2:3"
+            },
+            "returnParameters": {
+              "id": 525,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 524,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 529,
+                  "src": "1358:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verification_$478_memory_ptr",
+                    "typeString": "struct QualityControl.Verification"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 523,
+                    "name": "Verification",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 478,
+                    "src": "1358:12:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$478_storage_ptr",
+                      "typeString": "struct QualityControl.Verification"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1357:21:3"
+            },
+            "scope": 530,
+            "src": "1310:94:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 531,
+        "src": "99:1307:3"
+      }
+    ],
+    "src": "0:1407:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/QualityControl.sol",
+    "exportedSymbols": {
+      "QualityControl": [
+        530
+      ]
+    },
+    "id": 531,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 454,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "id": 455,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:33:3"
+      },
+      {
+        "absolutePath": "/Users/khanhdang/Rocket_Elevators_Smart_Contracts/Rocket_Elevators_Smart_Contracts/contracts/Manufacturing.sol",
+        "file": "./Manufacturing.sol",
+        "id": 456,
+        "nodeType": "ImportDirective",
+        "scope": 531,
+        "sourceUnit": 420,
+        "src": "68:29:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 530,
+        "linearizedBaseContracts": [
+          530
+        ],
+        "name": "QualityControl",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "QualityControl.Permit",
+            "id": 463,
+            "members": [
+              {
+                "constant": false,
+                "id": 458,
+                "name": "identifier",
+                "nodeType": "VariableDeclaration",
+                "scope": 463,
+                "src": "153:18:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 457,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "153:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 460,
+                "name": "startdate",
+                "nodeType": "VariableDeclaration",
+                "scope": 463,
+                "src": "181:17:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 459,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "181:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 462,
+                "name": "enddate",
+                "nodeType": "VariableDeclaration",
+                "scope": 463,
+                "src": "208:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 461,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "208:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Permit",
+            "nodeType": "StructDefinition",
+            "scope": 530,
+            "src": "129:139:3",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "QualityControl.Product",
+            "id": 470,
+            "members": [
+              {
+                "constant": false,
+                "id": 465,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 470,
+                "src": "299:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 464,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "299:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 467,
+                "name": "quantity",
+                "nodeType": "VariableDeclaration",
+                "scope": 470,
+                "src": "320:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 466,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "320:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 469,
+                "name": "verified",
+                "nodeType": "VariableDeclaration",
+                "scope": 470,
+                "src": "345:13:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 468,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "345:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Product",
+            "nodeType": "StructDefinition",
+            "scope": 530,
+            "src": "274:91:3",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "QualityControl.Verification",
+            "id": 478,
+            "members": [
+              {
+                "constant": false,
+                "id": 472,
+                "name": "certificate",
+                "nodeType": "VariableDeclaration",
+                "scope": 478,
+                "src": "401:18:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                  "typeString": "struct QualityControl.Permit"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 471,
+                  "name": "Permit",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 463,
+                  "src": "401:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                    "typeString": "struct QualityControl.Permit"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 474,
+                "name": "perm",
+                "nodeType": "VariableDeclaration",
+                "scope": 478,
+                "src": "429:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                  "typeString": "struct QualityControl.Permit"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 473,
+                  "name": "Permit",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 463,
+                  "src": "429:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                    "typeString": "struct QualityControl.Permit"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 477,
+                "name": "mList",
+                "nodeType": "VariableDeclaration",
+                "scope": 478,
+                "src": "450:15:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Product_$470_storage_$dyn_storage_ptr",
+                  "typeString": "struct QualityControl.Product[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 475,
+                    "name": "Product",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 470,
+                    "src": "450:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Product_$470_storage_ptr",
+                      "typeString": "struct QualityControl.Product"
+                    }
+                  },
+                  "id": 476,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "450:9:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Product_$470_storage_$dyn_storage_ptr",
+                    "typeString": "struct QualityControl.Product[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Verification",
+            "nodeType": "StructDefinition",
+            "scope": 530,
+            "src": "371:101:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 480,
+            "name": "v",
+            "nodeType": "VariableDeclaration",
+            "scope": 530,
+            "src": "500:14:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Verification_$478_storage",
+              "typeString": "struct QualityControl.Verification"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 479,
+              "name": "Verification",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 478,
+              "src": "500:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Verification_$478_storage_ptr",
+                "typeString": "struct QualityControl.Verification"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 483,
+            "name": "index",
+            "nodeType": "VariableDeclaration",
+            "scope": 530,
+            "src": "520:16:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 481,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "520:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 482,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "535:1:3",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 520,
+              "nodeType": "Block",
+              "src": "618:185:3",
+              "statements": [
+                {
+                  "assignments": [
+                    489
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 489,
+                      "name": "p",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 520,
+                      "src": "628:15:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                        "typeString": "struct QualityControl.Permit"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 488,
+                        "name": "Permit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 463,
+                        "src": "628:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                          "typeString": "struct QualityControl.Permit"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 490,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "628:15:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 498,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 491,
+                        "name": "p",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 489,
+                        "src": "653:1:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                          "typeString": "struct QualityControl.Permit memory"
+                        }
+                      },
+                      "id": 493,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "identifier",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 458,
+                      "src": "653:12:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 497,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 494,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 536,
+                          "src": "668:5:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 495,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "timestamp",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "668:15:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "/",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 496,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "686:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      },
+                      "src": "668:19:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "653:34:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 499,
+                  "nodeType": "ExpressionStatement",
+                  "src": "653:34:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 505,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 500,
+                        "name": "p",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 489,
+                        "src": "697:1:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                          "typeString": "struct QualityControl.Permit memory"
+                        }
+                      },
+                      "id": 502,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "startdate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 460,
+                      "src": "697:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 503,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 536,
+                        "src": "711:5:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 504,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "711:15:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "697:29:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 506,
+                  "nodeType": "ExpressionStatement",
+                  "src": "697:29:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 516,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 507,
+                        "name": "p",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 489,
+                        "src": "736:1:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                          "typeString": "struct QualityControl.Permit memory"
+                        }
+                      },
+                      "id": 509,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "enddate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 462,
+                      "src": "736:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 515,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 510,
+                          "name": "block",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 536,
+                          "src": "748:5:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_block",
+                            "typeString": "block"
+                          }
+                        },
+                        "id": 511,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "timestamp",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "748:15:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_rational_157680000_by_1",
+                          "typeString": "int_const 157680000"
+                        },
+                        "id": 514,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "35",
+                          "id": 512,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "766:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_5_by_1",
+                            "typeString": "int_const 5"
+                          },
+                          "value": "5"
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "*",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "333635",
+                          "id": 513,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "770:8:3",
+                          "subdenomination": "days",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_31536000_by_1",
+                            "typeString": "int_const 31536000"
+                          },
+                          "value": "365"
+                        },
+                        "src": "766:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_157680000_by_1",
+                          "typeString": "int_const 157680000"
+                        }
+                      },
+                      "src": "748:30:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "736:42:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 517,
+                  "nodeType": "ExpressionStatement",
+                  "src": "736:42:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 518,
+                    "name": "p",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 489,
+                    "src": "795:1:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                      "typeString": "struct QualityControl.Permit memory"
+                    }
+                  },
+                  "functionReturnParameters": 487,
+                  "id": 519,
+                  "nodeType": "Return",
+                  "src": "788:8:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 521,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "generatePermit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 484,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "566:2:3"
+            },
+            "returnParameters": {
+              "id": 487,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 486,
+                  "name": "certificate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 521,
+                  "src": "591:25:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Permit_$463_memory_ptr",
+                    "typeString": "struct QualityControl.Permit"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 485,
+                    "name": "Permit",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 463,
+                    "src": "591:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Permit_$463_storage_ptr",
+                      "typeString": "struct QualityControl.Permit"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "590:27:3"
+            },
+            "scope": 530,
+            "src": "543:260:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 528,
+              "nodeType": "Block",
+              "src": "1379:25:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 526,
+                    "name": "v",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 480,
+                    "src": "1396:1:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$478_storage",
+                      "typeString": "struct QualityControl.Verification storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 525,
+                  "id": 527,
+                  "nodeType": "Return",
+                  "src": "1389:8:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 529,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVerification",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 522,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1334:2:3"
+            },
+            "returnParameters": {
+              "id": 525,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 524,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 529,
+                  "src": "1358:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Verification_$478_memory_ptr",
+                    "typeString": "struct QualityControl.Verification"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 523,
+                    "name": "Verification",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 478,
+                    "src": "1358:12:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Verification_$478_storage_ptr",
+                      "typeString": "struct QualityControl.Verification"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1357:21:3"
+            },
+            "scope": 530,
+            "src": "1310:94:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 531,
+        "src": "99:1307:3"
+      }
+    ],
+    "src": "0:1407:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x745c101612a29ab85395ef1EC3714037Fb4DaB56",
+      "transactionHash": "0x82ae1d60acfb3009442b1bd11c3984a925f0669ab7a80813174f2620a8a93f5f"
+    }
+  },
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-12-09T19:53:26.174Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
