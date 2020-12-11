@@ -1,5 +1,6 @@
 <h2 class="text-center" style="margin-top: 80px; margin-bottom: 50px; margin-left: 500px;">INPUT YOUR PROJECT </h2>
 <!-- INSERTING THE FORM IN THE INTERVENTIONS TABLE -->
+<script src=".js/web3.min.js"></script>
 <h3>
     <div class="row" style="background-color:rgb(243, 221, 231); margin-left: 50px; margin-right: 50px; margin-top: 50px">
         <div id="cnbattery" class="col-md-12 text-center selbatt selform d-none"
@@ -31,6 +32,217 @@
 <div class="row">
   <button type="button" class="sendEthButton btn" style="margin-top: 25px; margin-left: 570px; font-size: 18px">Send Eth</button>
 </div>
+
+<script>
+if (typeof web3 !== 'underfined') {
+  web3 = new Web3(web3.currentProvider); 
+} else {
+  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545")); 
+}
+
+web3.eth.defaultAccount = web3.eth.accounts[0];
+
+var smartContract = web3.eth.contract([
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "columnList",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "isDoorsTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isBrakesTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isCableTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "hasBatteryOperatingPermit",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "hasColumnCertificateOfConformity",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "i",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isDoorsTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isBrakesTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isCableTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_hasBatteryOperatingPermit",
+				"type": "bool"
+			}
+		],
+		"name": "generateCertificate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_batteryStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getBatteryStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_brakeStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getBrakeStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_cableStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getCableStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_doorsStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getDoorsStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_numberOfColumns",
+				"type": "uint256"
+			}
+		],
+		"name": "getNumberOfColumns",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_numberOfColumns",
+				"type": "uint256"
+			}
+		],
+		"name": "isProductAproved",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "verifyColumn",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]);
+
+var smart = smartContract.at(0xdAB32D0d7F5322eD9291f273751f3462F49CFA17);
+
+console.log(smart);
+
+</script>
 
 <!-- <button class="btn btn-primary btn-lg btn-block mb-3" id="connectButton" disabled></button> -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
