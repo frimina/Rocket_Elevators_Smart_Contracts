@@ -14,8 +14,12 @@ contract TestSmartContract {
   bool expectedBrakeStatus = true;
   bool expectedCableStatus = true;
   bool expectedBatteryStatus = true;
-  
-
+  bool expectedhasColumnCertificateOfConformity = true;  
+  bool expectedProductState = false;
+  bool isDoorsTestPass = true;
+  bool isBrakesTestPass = true;
+  bool isCableTestPass = true;
+  bool hasBatteryOperatingPermit = true; 
 
   // Testing the getNumberOfColumns() function
   function testgetNumberOfColumns() public {     
@@ -77,6 +81,40 @@ contract TestSmartContract {
     );
   }
 
+  // Testing the generateCertificate() function
+  function testgenerateCertificate() public {   
 
+    //(bool _isDoorsTestPass, bool _isBrakesTestPass, bool _isCableTestPass, bool _hasBatteryOperatingPermit) 
+    bool returnedhasColumnCertificateOfConformity = smartcontract.generateCertificate(isDoorsTestPass, isBrakesTestPass, isCableTestPass, hasBatteryOperatingPermit);
+    
+    Assert.equal(
+        returnedhasColumnCertificateOfConformity,
+        expectedhasColumnCertificateOfConformity,
+        "Function does not return the expected value  of the column certificate."
+    );
+  }
 
+  // Testing the verifyColumn() function - Due to the difficulty of working with structures of another contract, I will use a variable to test only a part of the function
+  // function testverifyColumn() public {    
+  //   smartcontract.verifyColumn();
+  //   bool expectedValue = testVariable1;
+  //   Assert.equal(
+  //       expectedValue,
+  //       expectedDoorsStatus,
+  //       "Function does not return the expected status of the verifyColumn function."
+  //   );
+  // }
+
+  // Testing the isProductAproved() function
+  // function testisProductAproved() public { 
+    
+    
+  //   bool returnedProductState = smartcontract.isProductAproved(2);
+    
+  //   Assert.equal(
+  //       returnedProductState,
+  //       expectedProductState,
+  //       "Function does not return the expected value  of the column certificate."
+  //   );
+  // }
 } 
