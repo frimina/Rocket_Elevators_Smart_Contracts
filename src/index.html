@@ -43,3 +43,222 @@
     <script src="js/button.js"></script>
   </body>
 </html>
+
+
+<script>
+
+ 
+  if (typeof web3 !== 'undefined') {
+      web3 = new Web3(web3.currentProvider)
+  }
+  else {
+    web3 = new Web3(new Web.providers.HttpProvider('http://localhost:7545'));
+  }
+  web3.eth.defaultAccount = web3.eth.accounts[0]; 
+
+  var CoursetroContract = web3.eth.contract([
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "columnList",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "isDoorsTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isBrakesTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isCableTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "hasBatteryOperatingPermit",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "hasColumnCertificateOfConformity",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "i",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isDoorsTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isBrakesTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isCableTestPass",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_hasBatteryOperatingPermit",
+				"type": "bool"
+			}
+		],
+		"name": "generateCertificate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_batteryStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getBatteryStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_brakeStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getBrakeStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_cableStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getCableStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_doorsStatus",
+				"type": "bool"
+			}
+		],
+		"name": "getDoorsStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_numberOfColumns",
+				"type": "uint256"
+			}
+		],
+		"name": "getNumberOfColumns",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_numberOfColumns",
+				"type": "uint256"
+			}
+		],
+		"name": "isProductAproved",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "verifyColumn",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+])
+
+var Coursetro = CoursetroContract.at(0x9EC4BC2Bc413127B163B577401c0FA6EAFF98681);
+console.log(Coursetro);
+
+// coursetro.getNumberOfColumns(function(error, result){
+//   if (!error) {
+//     $
+//   }
+// })
+
+</script>
