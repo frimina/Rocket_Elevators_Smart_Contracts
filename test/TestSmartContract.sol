@@ -90,7 +90,7 @@ contract TestSmartContract {
     Assert.equal(
         returnedhasColumnCertificateOfConformity,
         expectedhasColumnCertificateOfConformity,
-        "Function does not return the expected value  of the column certificate."
+        "Function does not return the expected value of the column certificate."
     );
   }
 

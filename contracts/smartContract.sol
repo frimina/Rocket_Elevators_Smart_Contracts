@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.8.0;
 
 contract SmartContract {
 
-    address[16] public clients;
+    //address[16] public clients;
      // define needs
     uint256 public nbElevators;
     uint256 public nbControllers;
@@ -33,6 +33,8 @@ contract SmartContract {
         ];
         return myOrder;
     }
+
+
     uint numberOfColumns;
     bool doorsStatus = true;
     bool brakeStatus;  
@@ -48,6 +50,11 @@ contract SmartContract {
     }
     Column[] public columnList;   
 
+    event Doors (
+        bool doorsStatus,
+        uint columnNumber
+    );
+
     bool public testVariable1 = false;
     // struct Product {
     //     string client;
@@ -62,8 +69,9 @@ contract SmartContract {
     function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
         return _numberOfColumns;
     }
-    function getDoorsStatus(bool _doorsStatus) public pure returns(bool){
-        return _doorsStatus;
+    function getDoorsStatus(bool _doorsStatus, uint _columnNumber) public {
+        columnList[_columnNumber].isDoorsTestPass = _doorsStatus;
+        emit Doors(_doorsStatus, _columnNumber);
     }
     function getBrakeStatus(bool _brakeStatus) public pure returns(bool){
         return _brakeStatus;
@@ -87,7 +95,7 @@ contract SmartContract {
     {  
         //Comment this part for testing 
         for (uint i = 0; i < numberOfColumns; i++)   {
-            columnList[i].isDoorsTestPass = getDoorsStatus(doorsStatus);
+            getDoorsStatus(doorsStatus, i);
             columnList[i].isBrakesTestPass = getBrakeStatus(brakeStatus);
             columnList[i].isCableTestPass = getCableStatus(cableStatus);
             columnList[i].hasBatteryOperatingPermit = getBatteryStatus(batteryStatus);
@@ -112,7 +120,7 @@ contract SmartContract {
         //return p.isAproved;
         return ProductAproved;
     }  
-    function getClients() public view returns (address[16] memory) {
-        return clients; 
-    }
+    // function getClients() public view returns (address[16] memory) {
+    //     return clients; 
+    // }
 }
