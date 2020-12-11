@@ -65,6 +65,25 @@
 				"type": "uint256"
 			}
 		],
+		"name": "clients",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
 		"name": "columnList",
 		"outputs": [
 			{
@@ -99,11 +118,6 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "i",
-				"type": "uint256"
-			},
-			{
 				"internalType": "bool",
 				"name": "_isDoorsTestPass",
 				"type": "bool"
@@ -125,8 +139,14 @@
 			}
 		],
 		"name": "generateCertificate",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "pure",
 		"type": "function"
 	},
 	{
@@ -187,6 +207,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "getClients",
+		"outputs": [
+			{
+				"internalType": "address[16]",
+				"name": "",
+				"type": "address[16]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "bool",
@@ -225,6 +258,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "getOrder",
+		"outputs": [
+			{
+				"internalType": "uint256[5]",
+				"name": "",
+				"type": "uint256[5]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -241,6 +287,117 @@
 			}
 		],
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nbButtons",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nbControllers",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nbDisplays",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nbDoors",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nbElevators",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_nbElevators",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nbControllers",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nbDoors",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nbButtons",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nbDisplays",
+				"type": "uint256"
+			}
+		],
+		"name": "setOrder",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "testVariable1",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{

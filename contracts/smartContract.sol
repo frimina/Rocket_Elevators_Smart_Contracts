@@ -59,7 +59,7 @@ contract SmartContract {
     //     uint columnNumber;            
     // }    
     // Product p;
-        function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
+    function getNumberOfColumns(uint _numberOfColumns) public pure returns(uint){
         return _numberOfColumns;
     }
     function getDoorsStatus(bool _doorsStatus) public pure returns(bool){
