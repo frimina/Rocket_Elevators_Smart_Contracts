@@ -3,6 +3,7 @@ pragma solidity >=0.4.22 <0.8.0;
 
 contract SmartContract {
 
+    
      // define needs
     uint256 public nbElevators;
     uint256 public nbControllers;
