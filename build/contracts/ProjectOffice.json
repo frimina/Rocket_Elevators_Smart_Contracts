@@ -1,0 +1,1788 @@
+{
+  "contractName": "ProjectOffice",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbButtons",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbControllers",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbDisplays",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbDoors",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbElevators",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_nbElevators",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_nbControllers",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_nbDoors",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_nbButtons",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_nbDisplays",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOrder",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getOrder",
+      "outputs": [
+        {
+          "internalType": "uint256[5]",
+          "name": "",
+          "type": "uint256[5]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getOrder\",\"outputs\":[{\"internalType\":\"uint256[5]\",\"name\":\"\",\"type\":\"uint256[5]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nbButtons\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nbControllers\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nbDisplays\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nbDoors\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nbElevators\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_nbElevators\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_nbControllers\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_nbDoors\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_nbButtons\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_nbDisplays\",\"type\":\"uint256\"}],\"name\":\"setOrder\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/frimina/Desktop/week12/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol\":\"ProjectOffice\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/frimina/Desktop/week12/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol\":{\"keccak256\":\"0x68333233f0bc50fa9293bf0e80c45527bb884fc270e1670ce6698f06e5628cee\",\"urls\":[\"bzz-raw://7d9b7fea5ecfd2259911896d5cd3f18d711e38c58d4a102d9c0e0208c28f20c0\",\"dweb:/ipfs/QmTwbJTexXzNgbio9yeym3vBxWzYsUwaLrsNSMD5uuGWSL\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061029d806100206000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c8063958db55b1161005b578063958db55b1461011457806398a5bde014610132578063a73d9d7e14610150578063d36dedd21461016e5761007d565b80631378b52e14610082578063186de130146100d8578063243ec8ea146100f6575b600080fd5b6100d6600480360360a081101561009857600080fd5b8101908080359060200190929190803590602001909291908035906020019092919080359060200190929190803590602001909291905050506101b4565b005b6100e06101de565b6040518082815260200191505060405180910390f35b6100fe6101e4565b6040518082815260200191505060405180910390f35b61011c6101ea565b6040518082815260200191505060405180910390f35b61013a6101f0565b6040518082815260200191505060405180910390f35b6101586101f6565b6040518082815260200191505060405180910390f35b6101766101fc565b6040518082600560200280838360005b838110156101a1578082015181840152602081019050610186565b5050505090500191505060405180910390f35b84600081905550836001819055508260028190555081600381905550806004819055505050505050565b60045481565b60005481565b60025481565b60015481565b60035481565b610204610246565b61020c610246565b6040518060a00160405280600054815260200160015481526020016002548152602001600354815260200160045481525090508091505090565b6040518060a0016040528060059060208202803883398082019150509050509056fea265627a7a72315820fba27e3d226cec74f967dcb9ed971358f0e54462ce2feb3c86184d3c4e5c87d364736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c8063958db55b1161005b578063958db55b1461011457806398a5bde014610132578063a73d9d7e14610150578063d36dedd21461016e5761007d565b80631378b52e14610082578063186de130146100d8578063243ec8ea146100f6575b600080fd5b6100d6600480360360a081101561009857600080fd5b8101908080359060200190929190803590602001909291908035906020019092919080359060200190929190803590602001909291905050506101b4565b005b6100e06101de565b6040518082815260200191505060405180910390f35b6100fe6101e4565b6040518082815260200191505060405180910390f35b61011c6101ea565b6040518082815260200191505060405180910390f35b61013a6101f0565b6040518082815260200191505060405180910390f35b6101586101f6565b6040518082815260200191505060405180910390f35b6101766101fc565b6040518082600560200280838360005b838110156101a1578082015181840152602081019050610186565b5050505090500191505060405180910390f35b84600081905550836001819055508260028190555081600381905550806004819055505050505050565b60045481565b60005481565b60025481565b60015481565b60035481565b610204610246565b61020c610246565b6040518060a00160405280600054815260200160015481526020016002548152602001600354815260200160045481525090508091505090565b6040518060a0016040528060059060208202803883398082019150509050509056fea265627a7a72315820fba27e3d226cec74f967dcb9ed971358f0e54462ce2feb3c86184d3c4e5c87d364736f6c63430005100032",
+  "sourceMap": "34:823:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:823:3;;;;;;;",
+  "deployedSourceMap": "34:823:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:823:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:353;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;238:353:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;207:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;83:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;149:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;115:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;177:24;;;:::i;:::-;;;;;;;;;;;;;;;;;;;596:259;;;:::i;:::-;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;596:259:3;;;;;;;;;;;;;;;;238:353;438:12;424:11;:26;;;;476:14;460:13;:30;;;;510:8;500:7;:18;;;;540:10;528:9;:22;;;;573:11;560:10;:24;;;;238:353;;;;;:::o;207:25::-;;;;:::o;83:26::-;;;;:::o;149:22::-;;;;:::o;115:28::-;;;;:::o;177:24::-;;;;:::o;596:259::-;637:17;;:::i;:::-;666:25;;:::i;:::-;:158;;;;;;;;708:11;;666:158;;;;733:13;;666:158;;;;760:7;;666:158;;;;781:9;;666:158;;;;804:10;;666:158;;;;;841:7;834:14;;;596:259;:::o;34:823::-;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;34:823:3;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.8.0;\n\ncontract ProjectOffice {\n    // define needs\n    uint256 public nbElevators;\n    uint256 public nbControllers;\n    uint256 public nbDoors;\n    uint256 public nbButtons;\n    uint256 public nbDisplays;\n    function setOrder(\n        uint256 _nbElevators,\n        uint256 _nbControllers,\n        uint256 _nbDoors,\n        uint256 _nbButtons,\n        uint256 _nbDisplays\n    ) public {\n        nbElevators = _nbElevators;\n        nbControllers = _nbControllers;\n        nbDoors = _nbDoors;\n        nbButtons = _nbButtons;\n        nbDisplays = _nbDisplays;\n    }\n    function getOrder() public view returns (uint256[5] memory) {\n        uint256[5] memory myOrder = [\n            nbElevators,\n            nbControllers,\n            nbDoors,\n            nbButtons,\n            nbDisplays\n        ];\n        return myOrder;\n    }\n}",
+  "sourcePath": "/Users/frimina/Desktop/week12/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol",
+  "ast": {
+    "absolutePath": "/Users/frimina/Desktop/week12/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol",
+    "exportedSymbols": {
+      "ProjectOffice": [
+        607
+      ]
+    },
+    "id": 608,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 540,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 607,
+        "linearizedBaseContracts": [
+          607
+        ],
+        "name": "ProjectOffice",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 542,
+            "name": "nbElevators",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "83:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 541,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "83:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 544,
+            "name": "nbControllers",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "115:28:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 543,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "115:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 546,
+            "name": "nbDoors",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "149:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 545,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "149:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 548,
+            "name": "nbButtons",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "177:24:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 547,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "177:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 550,
+            "name": "nbDisplays",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "207:25:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 549,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "207:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 583,
+              "nodeType": "Block",
+              "src": "414:177:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 565,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 563,
+                      "name": "nbElevators",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 542,
+                      "src": "424:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 564,
+                      "name": "_nbElevators",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 552,
+                      "src": "438:12:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "424:26:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 566,
+                  "nodeType": "ExpressionStatement",
+                  "src": "424:26:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 569,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 567,
+                      "name": "nbControllers",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 544,
+                      "src": "460:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 568,
+                      "name": "_nbControllers",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 554,
+                      "src": "476:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "460:30:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 570,
+                  "nodeType": "ExpressionStatement",
+                  "src": "460:30:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 573,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 571,
+                      "name": "nbDoors",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 546,
+                      "src": "500:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 572,
+                      "name": "_nbDoors",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 556,
+                      "src": "510:8:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "500:18:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 574,
+                  "nodeType": "ExpressionStatement",
+                  "src": "500:18:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 577,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 575,
+                      "name": "nbButtons",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 548,
+                      "src": "528:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 576,
+                      "name": "_nbButtons",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 558,
+                      "src": "540:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "528:22:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 578,
+                  "nodeType": "ExpressionStatement",
+                  "src": "528:22:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 581,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 579,
+                      "name": "nbDisplays",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 550,
+                      "src": "560:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 580,
+                      "name": "_nbDisplays",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 560,
+                      "src": "573:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "560:24:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 582,
+                  "nodeType": "ExpressionStatement",
+                  "src": "560:24:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 584,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 561,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 552,
+                  "name": "_nbElevators",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "265:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 551,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 554,
+                  "name": "_nbControllers",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "295:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 553,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "295:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 556,
+                  "name": "_nbDoors",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "327:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 555,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "327:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 558,
+                  "name": "_nbButtons",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "353:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 557,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 560,
+                  "name": "_nbDisplays",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "381:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 559,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "255:151:3"
+            },
+            "returnParameters": {
+              "id": 562,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "414:0:3"
+            },
+            "scope": 607,
+            "src": "238:353:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 605,
+              "nodeType": "Block",
+              "src": "656:199:3",
+              "statements": [
+                {
+                  "assignments": [
+                    595
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 595,
+                      "name": "myOrder",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 605,
+                      "src": "666:25:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                        "typeString": "uint256[5]"
+                      },
+                      "typeName": {
+                        "baseType": {
+                          "id": 593,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "666:7:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 594,
+                        "length": {
+                          "argumentTypes": null,
+                          "hexValue": "35",
+                          "id": 592,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "674:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_5_by_1",
+                            "typeString": "int_const 5"
+                          },
+                          "value": "5"
+                        },
+                        "nodeType": "ArrayTypeName",
+                        "src": "666:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$5_storage_ptr",
+                          "typeString": "uint256[5]"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 602,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "id": 596,
+                        "name": "nbElevators",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 542,
+                        "src": "708:11:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 597,
+                        "name": "nbControllers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 544,
+                        "src": "733:13:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 598,
+                        "name": "nbDoors",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 546,
+                        "src": "760:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 599,
+                        "name": "nbButtons",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 548,
+                        "src": "781:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 600,
+                        "name": "nbDisplays",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 550,
+                        "src": "804:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 601,
+                    "isConstant": false,
+                    "isInlineArray": true,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "694:130:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                      "typeString": "uint256[5] memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "666:158:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 603,
+                    "name": "myOrder",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 595,
+                    "src": "841:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                      "typeString": "uint256[5] memory"
+                    }
+                  },
+                  "functionReturnParameters": 590,
+                  "id": 604,
+                  "nodeType": "Return",
+                  "src": "834:14:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 606,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 585,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "613:2:3"
+            },
+            "returnParameters": {
+              "id": 590,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 589,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 606,
+                  "src": "637:17:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                    "typeString": "uint256[5]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 586,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "637:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 588,
+                    "length": {
+                      "argumentTypes": null,
+                      "hexValue": "35",
+                      "id": 587,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "645:1:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_5_by_1",
+                        "typeString": "int_const 5"
+                      },
+                      "value": "5"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "637:10:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$5_storage_ptr",
+                      "typeString": "uint256[5]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "636:19:3"
+            },
+            "scope": 607,
+            "src": "596:259:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 608,
+        "src": "34:823:3"
+      }
+    ],
+    "src": "0:857:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/frimina/Desktop/week12/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol",
+    "exportedSymbols": {
+      "ProjectOffice": [
+        607
+      ]
+    },
+    "id": 608,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 540,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 607,
+        "linearizedBaseContracts": [
+          607
+        ],
+        "name": "ProjectOffice",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 542,
+            "name": "nbElevators",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "83:26:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 541,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "83:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 544,
+            "name": "nbControllers",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "115:28:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 543,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "115:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 546,
+            "name": "nbDoors",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "149:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 545,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "149:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 548,
+            "name": "nbButtons",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "177:24:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 547,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "177:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 550,
+            "name": "nbDisplays",
+            "nodeType": "VariableDeclaration",
+            "scope": 607,
+            "src": "207:25:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 549,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "207:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 583,
+              "nodeType": "Block",
+              "src": "414:177:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 565,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 563,
+                      "name": "nbElevators",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 542,
+                      "src": "424:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 564,
+                      "name": "_nbElevators",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 552,
+                      "src": "438:12:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "424:26:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 566,
+                  "nodeType": "ExpressionStatement",
+                  "src": "424:26:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 569,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 567,
+                      "name": "nbControllers",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 544,
+                      "src": "460:13:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 568,
+                      "name": "_nbControllers",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 554,
+                      "src": "476:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "460:30:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 570,
+                  "nodeType": "ExpressionStatement",
+                  "src": "460:30:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 573,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 571,
+                      "name": "nbDoors",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 546,
+                      "src": "500:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 572,
+                      "name": "_nbDoors",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 556,
+                      "src": "510:8:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "500:18:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 574,
+                  "nodeType": "ExpressionStatement",
+                  "src": "500:18:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 577,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 575,
+                      "name": "nbButtons",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 548,
+                      "src": "528:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 576,
+                      "name": "_nbButtons",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 558,
+                      "src": "540:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "528:22:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 578,
+                  "nodeType": "ExpressionStatement",
+                  "src": "528:22:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 581,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 579,
+                      "name": "nbDisplays",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 550,
+                      "src": "560:10:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 580,
+                      "name": "_nbDisplays",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 560,
+                      "src": "573:11:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "560:24:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 582,
+                  "nodeType": "ExpressionStatement",
+                  "src": "560:24:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 584,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 561,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 552,
+                  "name": "_nbElevators",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "265:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 551,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 554,
+                  "name": "_nbControllers",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "295:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 553,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "295:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 556,
+                  "name": "_nbDoors",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "327:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 555,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "327:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 558,
+                  "name": "_nbButtons",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "353:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 557,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 560,
+                  "name": "_nbDisplays",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 584,
+                  "src": "381:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 559,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "255:151:3"
+            },
+            "returnParameters": {
+              "id": 562,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "414:0:3"
+            },
+            "scope": 607,
+            "src": "238:353:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 605,
+              "nodeType": "Block",
+              "src": "656:199:3",
+              "statements": [
+                {
+                  "assignments": [
+                    595
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 595,
+                      "name": "myOrder",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 605,
+                      "src": "666:25:3",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                        "typeString": "uint256[5]"
+                      },
+                      "typeName": {
+                        "baseType": {
+                          "id": 593,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "666:7:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 594,
+                        "length": {
+                          "argumentTypes": null,
+                          "hexValue": "35",
+                          "id": 592,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "674:1:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_5_by_1",
+                            "typeString": "int_const 5"
+                          },
+                          "value": "5"
+                        },
+                        "nodeType": "ArrayTypeName",
+                        "src": "666:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$5_storage_ptr",
+                          "typeString": "uint256[5]"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 602,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "id": 596,
+                        "name": "nbElevators",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 542,
+                        "src": "708:11:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 597,
+                        "name": "nbControllers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 544,
+                        "src": "733:13:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 598,
+                        "name": "nbDoors",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 546,
+                        "src": "760:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 599,
+                        "name": "nbButtons",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 548,
+                        "src": "781:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 600,
+                        "name": "nbDisplays",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 550,
+                        "src": "804:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 601,
+                    "isConstant": false,
+                    "isInlineArray": true,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "694:130:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                      "typeString": "uint256[5] memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "666:158:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 603,
+                    "name": "myOrder",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 595,
+                    "src": "841:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                      "typeString": "uint256[5] memory"
+                    }
+                  },
+                  "functionReturnParameters": 590,
+                  "id": 604,
+                  "nodeType": "Return",
+                  "src": "834:14:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 606,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 585,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "613:2:3"
+            },
+            "returnParameters": {
+              "id": 590,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 589,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 606,
+                  "src": "637:17:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$5_memory_ptr",
+                    "typeString": "uint256[5]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 586,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "637:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 588,
+                    "length": {
+                      "argumentTypes": null,
+                      "hexValue": "35",
+                      "id": 587,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "645:1:3",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_5_by_1",
+                        "typeString": "int_const 5"
+                      },
+                      "value": "5"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "637:10:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$5_storage_ptr",
+                      "typeString": "uint256[5]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "636:19:3"
+            },
+            "scope": 607,
+            "src": "596:259:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 608,
+        "src": "34:823:3"
+      }
+    ],
+    "src": "0:857:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-12-12T03:24:42.215Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
